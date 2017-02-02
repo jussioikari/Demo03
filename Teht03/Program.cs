@@ -11,7 +11,15 @@ namespace Teht03
         static void Main(string[] args)
         {
             TV tv = new TV();
-            TV IsOn = true;
+            tv.IsOn = true;
+            tv.ChannelName = "Mtv3";
+            tv.ChannelNumber = 3;
+            tv.Program = "News";
+            tv.Show();
+            Console.WriteLine("Channel is " + tv.ChannelName);
+            Console.WriteLine("Channelnumber is " + tv.ChannelNumber);
+            Console.WriteLine("Program is " + tv.Program);
+
 
         }
     }
